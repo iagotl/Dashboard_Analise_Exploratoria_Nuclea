@@ -1,0 +1,59 @@
+/* === Paleta de Cores === */
+:root {
+    --primary-color: #3f796c;
+    --secondary-color: #002873;
+}
+
+/* === Cabeçalhos === */
+h1, h2, h3 {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+/* === Texto Geral === */
+p, li, td {
+    color: #333333;
+    font-size: 1rem;
+}
+
+/* === Divisores === */
+hr {
+    border: 1px solid var(--primary-color);
+    margin: 1.5rem 0;
+}
+
+/* === Logo === */
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 220px;
+}
+
+/* === Caixa de introdução === */
+.intro-box {
+    background-color: #f8faf9;
+    border-left: 5px solid var(--primary-color);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+/* === Seção do Logo com faixa colorida === */
+/* === Faixa verde com logo centralizado === */
+.logo-banner {
+    background-color: #3f796c;
+    border-radius: 10px;
+    padding: 0; /* sem margens internas */
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Ajuste da imagem do logo dentro da faixa */
+.logo-banner img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: contain;
+    max-height: 160px; /* evita que fique muito alta */
+}
