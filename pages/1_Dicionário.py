@@ -1,5 +1,6 @@
 import streamlit as st
 from PIL import Image
+from pathlib import Path
 
 # --- Importar CSS ---
 with open("styles/style.css") as f:
@@ -22,7 +23,9 @@ A **Base de Boletos** é o principal conjunto de dados utilizado neste projeto, 
 Cada linha da tabela representa um **boleto individual** cedido ao fundo, contendo informações desde a sua **emissão** até o **pagamento ou baixa financeira**.
 """)
 
-image = Image.open("assets/base_boletos.png")
+# Pega o diretório raiz do projeto
+BASE_DIR = Path(__file__).parent.parent
+image = Image.open(BASE_DIR / "assets" / "base_boletos.png")
 st.image(image, caption="Dicionário de dados da base de boletos")
 
 

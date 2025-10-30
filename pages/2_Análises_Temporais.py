@@ -21,7 +21,7 @@ e observar padrões de comportamento no fluxo de pagamento.
 # ============================================================
 # 🔹 Carrega a base (apenas uma vez)
 # ============================================================
-df = pd.read_csv("/mnt/c/Rocketseat - Python/fidc_dashboard/data/base_tratada_nuclea.csv", low_memory=False)
+df = pd.read_csv("data/base_tratada_nuclea.csv", low_memory=False)
 df["dt_emissao"] = pd.to_datetime(df["dt_emissao"], errors="coerce")
 df = df.dropna(subset=["dt_emissao"])
 df["ano_mes_emissao"] = df["dt_emissao"].dt.to_period("M").astype(str)
