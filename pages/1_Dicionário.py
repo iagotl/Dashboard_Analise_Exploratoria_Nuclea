@@ -25,7 +25,7 @@ Cada linha da tabela representa um **boleto individual** cedido ao fundo, conten
 
 # Pega o diretório raiz do projeto
 BASE_DIR = Path(__file__).parent.parent
-image = Image.open(BASE_DIR / "assets" / "base_boletos.png")
+image = Image.open(BASE_DIR / "assets" / "base_boletos.PNG")
 st.image(image, caption="Dicionário de dados da base de boletos")
 
 
@@ -37,7 +37,7 @@ A **base auxiliar** contém indicadores financeiros calculados a partir dos **CN
 Esses indicadores foram utilizados para enriquecer as análises de risco e consistência dos cedentes.
 """)
 
-image_aux = Image.open("assets/base_auxiliar.png")  # substitua pelo nome correto do arquivo
+image_aux = Image.open("assets/base_auxiliar.PNG")  # substitua pelo nome correto do arquivo
 st.image(image_aux, caption="Dicionário de dados da base auxiliar", use_container_width=True)
 
 
