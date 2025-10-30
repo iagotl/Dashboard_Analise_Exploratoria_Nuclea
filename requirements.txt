@@ -1,25 +1,7 @@
-# --- Core da aplicação ---
-streamlit==1.39.0
-pandas==2.2.2
-numpy==1.26.4
-
-# --- Visualização de dados ---
-plotly==5.24.1
-
-# --- Gráficos e estatísticas ---
-statsmodels==0.14.2
-
-# --- Manipulação de imagens e layout ---
-Pillow==10.4.0
-
-# --- Estilo e compatibilidade ---
-jinja2==3.1.4
-
-# --- Utilitários diversos (expansão futura e compatibilidade) ---
-openpyxl==3.1.5      # para leitura/gravação de Excel, se necessário
-python-dateutil==2.9.0.post0
-pytz==2024.2
-
-# --- (Opcional, mas recomendado) ---
-# para gráficos mais avançados, exportação de imagem, e dashboards complexos
-kaleido==0.2.1
+streamlit
+pandas
+numpy
+plotly
+statsmodels
+Pillow
+openpyxl
